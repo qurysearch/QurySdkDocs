@@ -115,7 +115,7 @@ searchResultView.setLandscape(true);
 
 ### 3.4 搜索推荐
 QurySDK 包含搜索推荐功能，当 QurySearchResultView 被加载到页面时或清空搜索条件时自动展示搜索推荐内容：
-![pdf-1](pdf-1.jpeg)
+![pdf-1](../img/pdf-1.jpeg)
 > 如果不需要展示搜索推荐内容，请联系对接人员关闭搜索推荐功能
 
 ### 3.5 搜索直达
@@ -135,7 +135,7 @@ searchResultView.query("dress", new AsyncQueryListener() {
 	    }
 });
 ```
-![pdf-2](pdf-2.jpeg)
+![pdf-2](../img/pdf-2.jpeg)
 
 ### 3.6 固定的头部和脚部
 当搜索直达结果的头部或脚部需要展示自己的 View，且 View 不会随着搜索条件变化，可以通过下面的接口实现：
