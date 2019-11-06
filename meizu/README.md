@@ -2,9 +2,7 @@
 
 版本号|更新内容
 :-:|:-:
-0.0.6|去掉Toast提示
-0.0.5|添加获取GoogleAdId接口，解决SP空指针异常
-0.0.2|解决View加载异常
+1.0.2|上线初版
 
 ## 一、获取ApiKey
 
@@ -34,7 +32,7 @@ JDK8+
 ```dependencies {
     ......
     
-    implementation 'com.qury:360os:${sdkverion}'
+    implementation 'com.qury:meizu:1.0.2'
 }
 ```
 
@@ -260,30 +258,7 @@ public Builder setClickListener(QuryClickListener listener);
 public QuryConfig build();
 ```
 
-### 4.3 QuryField
-
-```
-/**
- * 获取GoogleAdId
- * @param context 上下文
- * @param observer GoogleAdId回调接口
- */
-public static void readGoogleAdId(Context context, FieldObserver observer);
-```
-
-### 4.4 FieldObserver
-
-```
-/**
- * GoogleAdId 回调
- * @param context   上下文
- * @param adId      GoogleAdId
- */
-public void onGoogleAdId(Context context, String adId);
-```
-
-
-### 4.5 GeneralImageLoader
+### 4.3 GeneralImageLoader
 
 ```
 /**
@@ -317,7 +292,7 @@ public void load(ImageView imageView, String url, @DrawableRes int placeId, @Dra
 public void load(ImageView imageView, @DrawableRes int resId, @DrawableRes int placeId, @DrawableRes int errorId);
 ```
 
-### 4.6 QuryClickListener
+### 4.4 QuryClickListener
 
 ```
 /**
@@ -368,7 +343,7 @@ public boolean onTurnToApp(Context context, String packageId, String url, int so
 public boolean onTurnToWeb(Context context, String title, String url, int source);
 ```
 
-### 4.7 QurySearchResultView
+### 4.5 QurySearchResultView
 
 ```
 /**
@@ -494,7 +469,7 @@ public void setHeaderData(List<? extends HeaderDataItem> list, String matchKey);
 public void setFooterData(List<? extends FooterDataItem> list, String matchKey);
 ```
 
-### 4.8 ViewHolderWrapper
+### 4.6 ViewHolderWrapper
 
 ```
 /**
@@ -513,11 +488,11 @@ public abstract RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup pa
 public abstract void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position);
 ```
 
-### 4.9 HeaderDataItem
+### 4.7 HeaderDataItem
 
 头部列表数据基类
 
-### 4.10 FooterDataItem
+### 4.8 FooterDataItem
 
 脚部列表数据基类
 

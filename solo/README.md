@@ -2,9 +2,7 @@
 
 版本号|更新内容
 :-:|:-:
-0.0.6|去掉Toast提示
-0.0.5|添加获取GoogleAdId接口，解决SP空指针异常
-0.0.2|解决View加载异常
+1.0.2|联调初版
 
 ## 一、获取ApiKey
 
@@ -34,7 +32,7 @@ JDK8+
 ```dependencies {
     ......
     
-    implementation 'com.qury:360os:${sdkverion}'
+    implementation 'com.qury:solo:1.0.2'
 }
 ```
 
